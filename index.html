@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <ul id="navigation">
+        <li><a href="#" id="top">Наш сайт</a></li>
+        <li><a href="#">Характеристики</a></li>
+        <li><a href="#" style="color: #b2ff00;">Контакты</a></li>
+        <li id="icon"><img src="png/icon.png" alt="icon"></li>
+    </ul>
+    
+    <div class="main">
+        <div class="whiteboard">
+            <div class="kontaktdan">
+                <p>Контактные данные</p>
+            </div>
+            <div class="pinkblock">
+                <div class="information">
+                    <img src="png/map.png" alt="Карта">
+                </div>
+                <div class="wrapper">
+                    <div class="text">
+                        <p>г. Челябинск, ул. Ворошилова 12</p>
+                        <p>Время работы: <br> 
+                        пн-пт с 8:00 до 20:00 <br>
+                        сб-вс с 9:00 до 18:00</p>
+                    </div>
+                    <div class="text2">
+                        <p>+7 (999) 999-99-99</p>
+                        <p>email@gmail.com</p>
+                        <p>МИДиС</p>
+                    </div>
+                </div>
+                <div class="sent">
+                    <p>Наши социальные сети</p>
+                    <div class="social-icons">
+                        <img src="png/wk.png" alt="VK">
+                        <img src="png/mail.png" alt="Email">
+                        <img src="png/telegramm.png" alt="Telegram">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nuvunder">
+            <li><a href="#top">Наверх</a></li>
+            <li><a href="#">Характеристики</a></li>
+            <li><a href="#">Контакты</a></li>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const navigation = document.getElementById('navigation');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                navigation.classList.toggle('active');
+                mobileMenuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
